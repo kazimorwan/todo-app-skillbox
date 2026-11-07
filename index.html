@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillBox-ToDo App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-900 grid grid-cols-12">
+    <section class="bg-[#22416a] size-full py-5 px-2.5 rounded-md rounded-s-none col-span-3 sticky top-0 left-0 h-dvh">
+      <h1 class="text-3xl text-center font-bold text-white">ToDo App</h1>
+
+      <input type="text" id="todoTitle" placeholder="Enter title" class="w-full bg-gray-200 text-2xl px-4 py-2 rounded-md mt-5 border-0 outline-0" />
+      <textarea placeholder="Enter todo" id="todoInput" class="w-full bg-gray-200 text-2xl px-4 py-2 rounded-md mt-5 h-3/4 border-0 outline-0 resize-y"></textarea>
+      <button type="submit" id="addBtn" class="px-4 py-2 rounded-md bg-[#adadff] w-full mt-3 cursor-pointer">+Add</button>
+    </section>
+
+    <section class="col-span-9 size-full px-4 pb-2">
+      <h3 class="text-white text-center text-3xl font-bold sticky top-0 bg-slate-900 py-5">All ToDo</h3>
+
+      <div class="flex gap-5 flex-wrap" id="result"></div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
